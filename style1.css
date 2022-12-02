@@ -86,14 +86,17 @@ hr {
   font-weight: bold;
 }
 
-.nav-brand a {
+.navigation .nav-brand-list{
   text-decoration: none;
   color: inherit;
+  list-style: none;
+  text-align: right;
 }
 
 .navigation .nav-pills {
   text-align: right;
   margin: 0.6rem 1rem;
+  
 }
 
 .navigation .link {
