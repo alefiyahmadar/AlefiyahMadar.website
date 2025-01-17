@@ -180,7 +180,8 @@ body {
 }
 
 @media only screen and (max-width: 435px) {
-.nav{
+
+  .nav{
 
   border-bottom-right-radius: 0%;
   padding: 1.5rem;
@@ -213,6 +214,7 @@ padding: 0.3rem;
   }
   .seci{
     border-radius: 0%;
+    
   }
   .offwhiteseci{
 
@@ -221,6 +223,7 @@ padding: 0.3rem;
   .offwhiteseco{
     font-size: small;
     font-weight: 100;
+    padding-bottom: 0.5rem;
   }
   .whitesec{
     font-size: large;
@@ -248,7 +251,7 @@ padding: 0.3rem;
 
     padding: 1rem 1rem;
     border-top-right-radius: 0%;
-    position: sticky;
+    
     
   }
   .footerh{
@@ -260,9 +263,14 @@ padding: 0.3rem;
     
   }
   h3{
-    font-size: small;
-    font-weight: 100;
+    font-size: 1rem;
+    font-weight: 550;
 
+  }
+  p{
+
+    font-size: small;
+    padding: 0.2rem;
   }
 
 
