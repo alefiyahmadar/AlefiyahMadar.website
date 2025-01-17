@@ -188,6 +188,9 @@ body {
   border-bottom-right-radius: 0%;
   padding: 1.5rem;
 }
+.logoimg{
+  position: absolute;
+}
   .no-bullets{
 
     margin-left: 0%;
@@ -239,14 +242,21 @@ body {
 
     padding: 1rem 1rem;
     border-top-right-radius: 0%;
+    position: sticky;
+    
   }
   .footerh{
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
   .padded{
 
     padding: 0%;
     
+  }
+  h3{
+    font-size: small;
+    font-weight: 100;
+
   }
 
 
