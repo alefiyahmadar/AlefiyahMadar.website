@@ -175,10 +175,7 @@ body {
   width: 25%;
 }
 @media only screen and (min-width: 435px){
-.logoimg{
 
-  display: none;
-}
 
 }
 
@@ -192,9 +189,18 @@ body {
   position: absolute;
 }
   .no-bullets{
+display: flex;
+margin-left: 0%;
+justify-content: right;
+padding: 0%;
+  
+    
+  }
+  .inline{
 
-    margin-left: 0%;
-    display: none;
+font-size: 0.7rem;
+padding: 0.3rem;
+
   }
   .brand{
     font-size: 1rem;
