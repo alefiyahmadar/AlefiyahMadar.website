@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 :root {
-  --primary-color: #d97706;
-  --off-white: #f3f4f6;
-  --dark-gray: #6b7280;
+  --primary-color: #09122C;
+  --off-white: #E17564;
+  --dark-gray: #872341;
 }
 
 body {
@@ -174,3 +174,75 @@ body {
 
   width: 25%;
 }
+
+@media only screen and (max-width: 435px) {
+.nav{
+
+  border-bottom-right-radius: 0%;
+  padding: 1.5rem;
+}
+  .no-bullets{
+
+    margin-left: 0%;
+    display: none;
+  }
+  .brand{
+    font-size: 1rem;
+  }
+  .imgclass{
+    font-size: large;
+  }
+  .container-center{
+    padding: 0.5rem;
+  }
+  .seci{
+    border-radius: 0%;
+  }
+  .offwhiteseci{
+
+    font-size: large;
+  }
+  .offwhiteseco{
+    font-size: small;
+    font-weight: 100;
+  }
+  .whitesec{
+    font-size: large;
+
+  }
+  .whiteseco{
+    font-size: small;
+    font-weight: 100;
+
+
+  }
+  .primary-link{
+
+    padding:0.5rem;
+    margin: auto;
+    font-size: small;
+  }
+  .secondary-link{
+
+    padding: 0.5rem;
+    margin: auto;
+    font-size: small;
+  }
+  .footer{
+
+    padding: 1rem 1rem;
+    border-top-right-radius: 0%;
+  }
+  .footerh{
+    font-size: 1rem;
+  }
+  .padded{
+
+    padding: 0%;
+    
+  }
+
+
+}
+
+
