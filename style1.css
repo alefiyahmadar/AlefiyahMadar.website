@@ -50,7 +50,7 @@ color:oklch(96.7% 0.003 264.542);
   padding-top: 0%;
   display: grid;
   grid-template-columns: 50px 50px  auto 50px 50px ;
-  grid-template-rows: [row1-start] 600px  [row1-end] 200px  600px [third-line] 50px [last-line];
+  grid-template-rows: [row1-start] 600px 200px  [row1-end]  900px [third-line] 50px [last-line];
 
 
 }
@@ -65,6 +65,7 @@ display: grid;
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 1;
+  grid-row-end:3 ;
 
   background-color:oklch(96.7% 0.003 264.542) ;
   background-image: url("images/pexels-jovydas-3113541.jpg");
@@ -127,8 +128,8 @@ justify-content: center;
   display: grid;
 grid-column-start: 1;
 grid-column-end: 6;
-grid-row-start: 2;
-grid-row-end: 4;
+grid-row-start: 3;
+grid-row-end: 6;
   
   background-image: url("images/pic2.jpg");
   background-size: cover;
@@ -152,14 +153,12 @@ background-color: rgba(0,0,0,0.5);
   width: 35rem;
   margin: auto;
   margin-top: 0%;
-  position: absolute;
-  left: 25%;
-  top: 100%;
+  
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
   padding: 1rem;
-  height: 90vh;
+  height: 70vh;
   
   
 }
@@ -170,17 +169,11 @@ background-color: rgba(0,0,0,0.5);
   padding-top: 1rem;
 
 }
-.personalInfo h4{
 
-  display: flex;
-  justify-content: center;
-  color:oklch(96.7% 0.003 264.542);
-  font-size: 1.5rem;
-}
 .personalInfo p{
 
   display: flex;
-  margin-top: 10%;
+  margin-top: 5%;
 
   text-align: center;
   word-spacing: 0.1rem;
