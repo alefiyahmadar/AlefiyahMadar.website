@@ -2,10 +2,11 @@ body{
 
   margin: 0%;
   padding: 0%;
+  
 }
 :root {
-  --primary-color: #09122C;
-  --off-white: oklch(70.7% 0.022 261.325);
+  --primary-color:oklch(55.3% 0.195 38.402);
+  --off-white: oklch(96.7% 0.003 264.542);
   --dark-color: oklch(27.8% 0.033 256.848)
 }
 
@@ -36,7 +37,7 @@ body{
 .block{
 
   text-decoration: none;
-  color: var(--off-white);
+  color: oklch(70.7% 0.022 261.325);
 
 }
 .navright a:hover{
@@ -50,7 +51,7 @@ color:oklch(96.7% 0.003 264.542);
   padding-top: 0%;
   display: grid;
   grid-template-columns: 50px 50px  auto 50px 50px ;
-  grid-template-rows: [row1-start] 600px 200px  [row1-end]  900px [third-line] 50px [last-line];
+  grid-template-rows: [row1-start] 600px 200px  [row1-end]  190px [third-line] 700px 700px [last-line]
 
 
 }
@@ -91,18 +92,21 @@ display: flex;
 justify-content: center;
   color:oklch(96.7% 0.003 264.542);
   font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
   font-size: 50px;
   width: 10%;
   margin: auto;
   padding: 1rem;
   padding-top: 5%;
+  letter-spacing: 0.2cm;
+
 
 }
 .overlay p span{
 
   color: oklch(55.3% 0.195 38.402);
+
 }
 .active{
 
@@ -113,14 +117,15 @@ justify-content: center;
 
   display: flex;
   justify-content: center;
-  position: absolute;
-  left: 42%;
+ 
   margin: auto;
   color:oklch(96.7% 0.003 264.542); 
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
+  letter-spacing: 0.2cm;
+
 }
 
 
@@ -129,7 +134,7 @@ justify-content: center;
 grid-column-start: 1;
 grid-column-end: 6;
 grid-row-start: 3;
-grid-row-end: 6;
+grid-row-end: 5;
   
   background-image: url("images/pic2.jpg");
   background-size: cover;
@@ -158,7 +163,7 @@ background-color: rgba(0,0,0,0.5);
   font-weight: 400;
   font-style: normal;
   padding: 1rem;
-  height: 70vh;
+
   
   
 }
@@ -176,10 +181,12 @@ background-color: rgba(0,0,0,0.5);
   margin-top: 5%;
 
   text-align: center;
-  word-spacing: 0.1rem;
+  word-spacing: 0.1%;
   padding: 2rem;
   font-size: large;
   color:oklch(96.7% 0.003 264.542);
+  letter-spacing: 0.05cm;
+  line-height: 1.5;
   
 
 }
@@ -195,9 +202,156 @@ background-color: rgba(0,0,0,0.5);
   font-size: 12 px;
   width: 40%;
   word-spacing: 0.1rem;
+  margin-top: 5%;
+  margin-bottom: 2rem;
 }
 .imgb{
 
   width: 25%;
 }
+
+.knowledge{
+
+  
+  z-index: 999;
+  grid-column-start: 3;
+  grid-row-start: 4;
+  
+  margin: auto;
+  
+  
+}
+.knowledge h4{
+
+  margin: auto;
+  
+  display: flex;
+  justify-content: center;
+  
+  font-family: "Bebas Neue", sans-serif;
+  
+  font-style: normal;
+  font-size: 2rem;
+  color: var(--off-white);
+font-weight: 800;
+
+letter-spacing: 0.2cm;
+
+
+}
+
+.knowledge p{
+
+  margin: auto;
+  
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: var(--off-white);
+font-weight: 400;
+letter-spacing: 0.2cm;
+
+
+
+
+}
+.slideBar{
+
+  margin-top: 4rem;
+  margin: auto;
+}
+.knowledge div{
+
+  width: 100%;
+  padding: 0.5rem;
+  
+}
+.knowledge label{
+
+  color:var(--off-white);
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: small;
+  
+}
+
+input[type="range"] {
+  width: 300px;
+  height: 6px;
+  accent-color: var(--primary-color);
+  margin: 10px 0;
+}
+.value-label{
+
+  color: var(--off-white);
+  font-size: smaller;
+}
+
+.Port{
+  
+  grid-column-start: 1;
+  grid-column-end: 6;
+  background-color: var(--dark-color);
+}
+
+.Port h4{
+
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  
+  font-family: "Bebas Neue", sans-serif;
+  
+  font-style: normal;
+  font-size: 2rem;
+  color: var(--off-white);
+font-weight: 800;
+
+
+letter-spacing: 0.2cm;
+}
+.Port p{
+  
+  
+  display: flex;
+  justify-content: center;
+
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: var(--off-white);
+font-weight: 400;
+letter-spacing: 0.2cm;
+}
+.Port ul{
+
+  display: flex;
+  margin: 0%;
+  justify-content: space-between;
+  padding-top: 2rem;
+  
+  
+  
+
+}
+.Port div{
+  display: flex;
+  
+  justify-content: center;
+
+}
+.Port img{
+
+  width: 80%;
+
+}
+
+
+
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home|AlefiyahMadar</title>
     <link href="style1.css" rel="stylesheet" />
+    <script src="./knowledge.js"></script>
 </head>
 <body>
     
@@ -43,6 +44,77 @@
 </div>
 <div class="SecPic">
     <div class="overlay2"></div>
+</div>
+
+<div class="knowledge">
+    
+    <h4>01 PROFESSIONAL</h4>
+    <p>MY KNOWLEDGE IN SOFTWARE</p>
+
+
+    <div class="slideBar">
+        <div>
+            <label>JAVASCRIPT</label> <input type="range" value="85"/>
+            <span class="value-label">0%</span>
+
+        </div>
+
+        <div>
+            <label>REACTJS</label>
+            <input type="range" value="80"/>
+            <span class="value-label">0%</span>
+        </div>
+        
+       
+  <div>      <label>NODEJS</label>
+    <input type="range" value="70"/>
+    <span class="value-label">0%</span></div>
+
+      <div>  <label>HTML5</label>
+        <input type="range" value="90"/>
+        <span class="value-label">0%</span></div>
+
+
+      <div>  <label>CSS3</label>
+        <input type="range" value="85"/>
+        <span class="value-label">0%</span></div>
+
+       <div> <label>Git & GitHub</label>
+        <input type="range" value="75"/>    <span class="value-label">0%</span></div>
+
+
+        <div> <label> Responsive Web Design</label>
+            <input type="range" value="85"/>
+            <span class="value-label">0%</span></div>
+    
+            <div> <label>Web Hosting</label>
+                <input type="range" value="90"/>
+                <span class="value-label">0%</span></div>
+                </div>
+    
+</div>
+
+<div class="Port">
+    
+
+        <h4>02 PORTFOLIO</h4>
+    <p>MY LATEST WORK. <span>SEE MORE</span></p>
+    <ul>
+        <div class="prod">
+            <img src="/images/pexels-karolina-grabowska-5632397.jpg"/>
+        </div>
+        <div class="prod">
+            <img src="/images/pexels-tracy-le-blanc-67789-607812.jpg"/>
+        </div>
+        <div class="prod">
+            <img src="/images/pexels-padrinan-167092.jpg"/>
+        </div>
+
+
+    </ul>
+    
+    
+
 </div>
  
     
@@ -97,6 +169,37 @@
             
         </ul>
         </footer>
+
+        <script>
+            const sliders = document.querySelectorAll('input[type="range"]');
+            const observer = new IntersectionObserver((entries, observer) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  const input = entry.target;
+                  const valueLabel = input.nextElementSibling; 
+                  const targetValue = parseInt(input.getAttribute('value'), 10);
+                  let current = 0;
+          
+                  const interval = setInterval(() => {
+                    if (current >= targetValue) {
+                      clearInterval(interval);
+                    } else {
+                      current++;
+                      input.value = current;
+                      valueLabel.textContent = current + "%";
+                    }
+                  }, 10);
+          
+                  observer.unobserve(input);
+                }
+              });
+            }, { threshold: 0.4 });
+          
+            sliders.forEach(slider => observer.observe(slider));
+          </script>
+          
+          
+          
 
 
 </body>
