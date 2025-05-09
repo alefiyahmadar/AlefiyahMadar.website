@@ -14,6 +14,11 @@ body{
 
 @media only screen and (min-width: 450px){
 
+html{
+
+  scroll-behavior:smooth;
+}
+
   .nav{
 
     background-color: var(--dark-color);
@@ -521,13 +526,13 @@ background-color: rgba(0,0,0,0.5);
   display: grid;
   
   grid-template-columns: 50px 50px  auto 50px 50px ;
-  grid-template-rows: [row1-start] 100px [row1-end] 700px [third-line] 50px [last-line];
+  grid-template-rows: [row1-start] 100px [row1-end] 10px [third-line] 50px [last-line];
   background-color: var(--dark-color);
 }
 .overlayProd{
   
   grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-end: 10;
   grid-row-start: 1;
   grid-row-end: 5;
   
@@ -543,7 +548,6 @@ background-color: rgba(0,0,0,0.5);
 .imgclass{
 display: flex;
 justify-content: center;
-grid-column-start: 3;
 margin-top: 4rem;
 
   font-size: 2rem;
@@ -560,6 +564,88 @@ margin-top: 4rem;
 margin-bottom: 1rem;
 
 }
+
+
+}
+
+
+@media only screen and (max-width: 450px){
+
+  html{
+scroll-behavior: smooth;
+  
+  }
+
+
+  img{
+
+    display: none;
+  }
+
+    .nav{
+
+     display: none;
+    
+    }
+    body{
+
+      background-color: var(--dark-color);
+    }
+    .imghead{
+
+      display: grid;
+  
+  grid-template-columns: 50px 50px  auto 50px 50px ;
+  grid-template-rows: [row1-start] 50px [row1-end] 700px [third-line] 50px [last-line];
+  
+    }
+    .whiteBg{
+
+      display: grid;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 1;
+      background-image: url("/images/pexels-jovydas-3113541.jpg");
+      background-size: cover;
+      font-family: "Bebas Neue", sans-serif;
+      
+      font-style: normal;
+    }
+    .overlay{
+
+      
+
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 2; 
+  cursor: pointer; 
+
+
+    }
+    .whiteBg p{
+
+      color: var(--off-white);
+      font-size: 3.5rem;
+      letter-spacing: 0.1cm;
+    }
+    .whiteBg p span{
+
+      color: var(--primary-color);
+    }
+    .whiteBg h5{
+
+      color: var(--off-white);
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 0.1cm;
+    }
+    .personalInfo{
+
+      background-color: yellow;
+      grid-column-start: 2;
+      grid-row-start: 3;
+    }
+  
+
 
 
 
