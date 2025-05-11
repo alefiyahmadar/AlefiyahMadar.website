@@ -595,8 +595,8 @@ scroll-behavior: smooth;
 
       display: grid;
   
-  grid-template-columns: 50px 50px  auto 50px 50px ;
-  grid-template-rows: [row1-start] 50px [row1-end] 700px [third-line] 50px [last-line];
+  grid-template-columns: 50px 60px  auto 60px 50px ;
+  grid-template-rows: [row1-start] 50px [row1-end] 500px [third-line] 50px [last-line];
   
     }
     .whiteBg{
@@ -605,6 +605,7 @@ scroll-behavior: smooth;
       grid-column-start: 1;
       grid-column-end: 6;
       grid-row-start: 1;
+      grid-row-end: 4;
       background-image: url("/images/pexels-jovydas-3113541.jpg");
       background-size: cover;
       font-family: "Bebas Neue", sans-serif;
@@ -624,29 +625,51 @@ scroll-behavior: smooth;
     .whiteBg p{
 
       color: var(--off-white);
-      font-size: 3.5rem;
+      font-size: 3rem;
       letter-spacing: 0.1cm;
+      margin-bottom: 0;
+  
+      padding: 1rem;
+    
+      
     }
     .whiteBg p span{
 
       color: var(--primary-color);
     }
     .whiteBg h5{
-
+       font-family: "Bebas Neue", sans-serif;
+      font-style: normal;
+      font-size: 1.5rem;
       color: var(--off-white);
-      font-size: 1rem;
-      font-weight: 400;
-      letter-spacing: 0.1cm;
+      font-weight: 500;
+      padding: 1rem;
+      margin-top: 0;
+
+    }
+    .side{
+      display: grid;
+      
+      grid-column-start: 5;
+      grid-row-start: 2;
+      position: absolute;
+      right: 7%;
+      z-index: 1000;
+      top: 10%;
+    
+  
+      
+
     }
     .personalInfo{
-
       background-color: yellow;
-      grid-column-start: 2;
-      grid-row-start: 3;
     }
+
+    
   
 
 
 
 
 }
+
