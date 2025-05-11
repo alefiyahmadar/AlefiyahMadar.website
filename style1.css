@@ -596,7 +596,7 @@ scroll-behavior: smooth;
       display: grid;
   
   grid-template-columns: 40px 70px  auto 70px 40px ;
-  grid-template-rows: [row1-start] 50px [row1-end] 400px [third-line]  200px 500px [last-line];
+  grid-template-rows: [row1-start] 50px [row1-end] 500px [third-line]  300px 500px [last-line];
   
     }
     .whiteBg{
@@ -667,7 +667,7 @@ scroll-behavior: smooth;
       grid-column-start: 2;
       grid-column-end: 5;
       grid-row-start: 3;
-      grid-row-end: 5;
+      grid-row-end: 4;
       z-index: 1000;
       
     }
