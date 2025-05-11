@@ -83,6 +83,7 @@ display: grid;
 grid-column-start: 1;
 grid-column-end: 6;
 grid-row-start: 1;
+grid-row-end: 4;
 
  
   
@@ -564,6 +565,10 @@ margin-top: 4rem;
 margin-bottom: 1rem;
 
 }
+.phone{
+
+  display: none ;
+}
 
 
 }
@@ -596,7 +601,7 @@ scroll-behavior: smooth;
       display: grid;
   
   grid-template-columns: 40px 70px  auto 70px 40px ;
-  grid-template-rows: [row1-start] 50px [row1-end] 500px [third-line]  300px 650px [last-line];
+  grid-template-rows: [row1-start] 50px [row1-end] 500px [third-line]  300px 700px 800px 20px 600px 100px 50px [last-line];
   
     }
     .whiteBg{
@@ -628,7 +633,7 @@ scroll-behavior: smooth;
       font-size: 3rem;
       letter-spacing: 0.1cm;
       margin-bottom: 0;
-      margin-top: 4rem;
+      margin-top: 6rem;
   
       padding: 1rem;
     
@@ -797,23 +802,172 @@ input[type="range"] {
   color: var(--off-white);
   font-size: smaller;
 }
-    .Port{
+ .Port{
+  background-color: var(--dark-color);
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 5;
+ }
+ .Port ul{
 
-      display: none;
-    }
-    .contact{
+  list-style: none;
+  margin: auto;
+  position: absolute;
+  z-index: 1000;
+ }
+ .prod{
 
-      display: none;
-    }
-    .contInfo{
+  width: 80%;
+  z-index: 1000;
+  margin-left: 1rem;
+ }
+ 
+ .Port img{
 
-      display: none;
-    }
-    .contInput{
+  display: flex;
+  width: 100%;
 
-      display: none;
-    }
+ }
+ .Port h4{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.5rem;
+      color: var(--off-white);
+       font-family: "Bebas Neue", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+    margin-top: 10%;
+      margin-bottom: 1%;
+      width: 30%;
+z-index: 1000;
+position: relative;
+
+ }
+ .Port p{
+    color: var(--off-white);
+       font-family: "Bebas Neue", sans-serif;
+      font-style: normal;
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      padding: 1rem;
+
   
+ }
+ .prod p{
+
+ display: none;
+ }
+ .contactbox{
+
+    background-color:var(--dark-color);
+      display: grid;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 7;
+      padding: 1rem;
+
+
+ }
+ .contactbox ul{
+
+margin: 0%;
+padding: 5%;
+ }
+ .overlay4{
+
+  background-color: rgba(0,0,0,0.5); 
+    z-index: 2; 
+    cursor: pointer; 
+ }
+ .contInfo h4{
+
+  color: var(--off-white);
+       font-family: "Bebas Neue", sans-serif;
+      font-style: normal;
+      font-size: 1.5rem;
+      font-weight: 100;
+      margin-bottom: 0%;
+      margin-top: 0;
+ }
+ .contInfo p{
+ color: var(--off-white);
+       font-family: "Bebas Neue", sans-serif;
+      font-style: normal;
+      font-size:1rem;
+      font-weight: 100;
+      letter-spacing: 0.01cm;
+      word-spacing: 0.001cm;
+      line-height: 0.7cm;
+  
+ }
+ .contInfo a{
+
+  color: var(--off-white);
+  text-decoration: none;
+  font-size: small;
+  letter-spacing: 0.01cm;
+ }
+ .contInput{
+
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-top: 1rem;
+ }
+ .contInput input{
+
+  padding: 0.5rem;
+  margin-bottom: 0.6rem;
+ }
+ .contInput button{
+ background-color: var(--primary-color);
+  padding: 0.5rem;
+  border: none;
+  color: var(--off-white);
+
+ }
+ .phone{
+
+  background-color: yellow;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  background-image: url("/images/pexels-karolina-grabowska-8092507.jpg");
+  background-size: cover;
+ }
+ .phone a{
+
+  z-index: 1000;
+  position: relative;
+ }
+ .phone img{
+
+  display: flex;
+  width: 2rem;
+ }
+ .phoneDiv{
+
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 2rem;
+ }
+    
+  .footer{
+background-color: var(--dark-color);
+display: grid;
+grid-column-start: 1;
+grid-column-end: 6;
+grid-row-start: 9;
+    display: flex;
+    justify-content: center;
+    color: var(--off-white);
+    font-family: "Bebas Neue", sans-serif;
+      font-style: normal;
+    
+  }
 
 
 
