@@ -762,20 +762,18 @@ scroll-behavior: smooth;
       font-weight: 400;
       
       width: 110%;
+      margin-bottom: 2rem;
       
 
 
     }
   
-    .slideBar{
-
-  margin-top: 4rem;
-  margin: auto;
-}
+ 
 .knowledge div{
 
   width: 100%;
   padding: 0.5rem;
+  margin-top: 0.4rem;
   
 }
 .knowledge label{
@@ -789,7 +787,7 @@ scroll-behavior: smooth;
 }
 
 input[type="range"] {
-  width: 300px;
+  width: 100px;
   height: 4px;
   accent-color: var(--primary-color);
   margin: 5px 0;
