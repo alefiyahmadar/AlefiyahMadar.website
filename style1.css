@@ -596,7 +596,7 @@ scroll-behavior: smooth;
       display: grid;
   
   grid-template-columns: 40px 70px  auto 70px 40px ;
-  grid-template-rows: [row1-start] 50px [row1-end] 500px [third-line]  300px 500px [last-line];
+  grid-template-rows: [row1-start] 50px [row1-end] 500px [third-line]  300px 650px [last-line];
   
     }
     .whiteBg{
@@ -628,6 +628,7 @@ scroll-behavior: smooth;
       font-size: 3rem;
       letter-spacing: 0.1cm;
       margin-bottom: 0;
+      margin-top: 4rem;
   
       padding: 1rem;
     
@@ -692,6 +693,10 @@ scroll-behavior: smooth;
       margin: auto;
       text-align: center;
     }
+    .personalInfo a{
+
+      text-decoration: none;
+    }
     .personalInfo button{
 
       background-color: var(--dark-color);
@@ -714,19 +719,86 @@ scroll-behavior: smooth;
       background-image: url("/images/pic2.jpg");
       background-size: cover;
     }
+    .overlay2{
+      background-color: rgba(0,0,0,0.5); 
+    z-index: 2; 
+    cursor: pointer; 
 
 
-
-
-
-
-
+    }
 
 
     .knowledge{
+      
+      
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 4;
+      z-index: 1000;
 
-      display: none;
     }
+    .knowledge h4{
+
+      font-size: 1.5rem;
+      margin: auto;
+      color: var(--off-white);
+       font-family: "Bebas Neue", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+    margin-top: 20%;
+      margin-bottom: 10%;
+      width: 60%;
+      
+    
+      
+    }
+    .knowledge p{
+      display: flex;
+      justify-content: center;
+       font-size: 1rem;
+      color: var(--off-white);
+       font-family: "Bebas Neue", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      
+      width: 110%;
+      
+
+
+    }
+  
+    .slideBar{
+
+  margin-top: 4rem;
+  margin: auto;
+}
+.knowledge div{
+
+  width: 100%;
+  padding: 0.5rem;
+  
+}
+.knowledge label{
+
+  color:var(--off-white);
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: small;
+  
+}
+
+input[type="range"] {
+  width: 300px;
+  height: 4px;
+  accent-color: var(--primary-color);
+  margin: 5px 0;
+}
+.value-label{
+
+  color: var(--off-white);
+  font-size: smaller;
+}
     .Port{
 
       display: none;
