@@ -71,7 +71,7 @@ display: grid;
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 1;
-  grid-row-end:3 ;
+  grid-row-end:4 ;
 
   background-color:oklch(96.7% 0.003 264.542) ;
   background-image: url("images/pexels-jovydas-3113541.jpg");
@@ -595,8 +595,8 @@ scroll-behavior: smooth;
 
       display: grid;
   
-  grid-template-columns: 50px 60px  auto 60px 50px ;
-  grid-template-rows: [row1-start] 50px [row1-end] 500px [third-line] 50px [last-line];
+  grid-template-columns: 40px 70px  auto 70px 40px ;
+  grid-template-rows: [row1-start] 50px [row1-end] 400px [third-line]  200px 500px [last-line];
   
     }
     .whiteBg{
@@ -662,10 +662,87 @@ scroll-behavior: smooth;
 
     }
     .personalInfo{
+      background-color: var(--dark-color);
+      display: grid;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 5;
+      z-index: 1000;
+      
+    }
+    .personalInfo img{
+
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      padding: 0.5rem;
+      margin-bottom: 0%;
+    }
+    .personalInfo p{
+
+      padding: 0.1rem;
+      width: 90%;
+      font-family: "Bebas Neue", sans-serif;
+      font-style: normal;
+      font-size: 1rem;
+      color: var(--off-white);
+      letter-spacing: 0.01cm;
+      word-spacing: 0.01cm;
+      margin: auto;
+      text-align: center;
+    }
+    .personalInfo button{
+
+      background-color: var(--dark-color);
+      border: none;
+      border: 1px solid var(--primary-color);
+      color: var(--off-white);
+      padding: 0.5rem;
+      margin: auto;
+      display: flex;
+      font-size: 0.8rem;
+    }
+    .SecPic{
+
       background-color: yellow;
+      display: grid;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 4;
+      grid-row-end: 6;
+      background-image: url("/images/pic2.jpg");
+      background-size: cover;
     }
 
-    
+
+
+
+
+
+
+
+
+    .knowledge{
+
+      display: none;
+    }
+    .Port{
+
+      display: none;
+    }
+    .contact{
+
+      display: none;
+    }
+    .contInfo{
+
+      display: none;
+    }
+    .contInput{
+
+      display: none;
+    }
   
 
 
