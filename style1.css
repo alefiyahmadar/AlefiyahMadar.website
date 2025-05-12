@@ -170,8 +170,8 @@ background-color: rgba(0,0,0,0.5);
   font-style: normal;
   padding: 1rem;
   opacity: 0;
-      transform: translateY(40px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 
   
   
@@ -587,6 +587,11 @@ margin-bottom: 1rem;
 scroll-behavior: smooth;
   
   }
+  
+.icons{
+
+  display: none;
+}
 
 
   #loader {
@@ -937,8 +942,9 @@ padding: 5%;
 
   color: var(--off-white);
   text-decoration: none;
-  font-size: small;
+  font-size: smaller;
   letter-spacing: 0.01cm;
+  
  }
  .contInput{
 
