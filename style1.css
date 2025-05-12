@@ -169,9 +169,16 @@ background-color: rgba(0,0,0,0.5);
   font-weight: 400;
   font-style: normal;
   padding: 1rem;
+  opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 
   
   
+}
+.personalInfo.visible {
+  opacity: 1;
+  transform: none;
 }
 .personalInfo img{
   display: flex;
@@ -582,10 +589,26 @@ scroll-behavior: smooth;
   }
 
 
-  img{
-
-    display: none;
-  }
+  #loader {
+            border: 12px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 12px solid #444444;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+ .center {            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+@keyframes spin {
+ 100% {
+                transform: rotate(360deg);
+            }
+        }
 
     .nav{
 
@@ -675,8 +698,16 @@ scroll-behavior: smooth;
       grid-row-start: 3;
       grid-row-end: 4;
       z-index: 1000;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
       
     }
+
+    .personalInfo.visible {
+  opacity: 1;
+  transform: none;
+}
     .personalInfo img{
 
       display: flex;
@@ -968,7 +999,10 @@ grid-row-start: 9;
       font-style: normal;
     
   }
+.overlay5 p{
 
+  font-size: small;
+}
 
 
 

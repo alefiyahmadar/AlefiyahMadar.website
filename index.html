@@ -9,7 +9,7 @@
     <script src="./knowledge.js"></script>
 </head>
 <body>
-    
+     <div id="loader" class="center"></div>
 
 <nav class="nav">
     
@@ -39,6 +39,7 @@
         
     </div>
 </div>
+
 <div class="personalInfo">
     <img src="/images/bxl-github.svg"/>
     <p>A BBA graduate with a 9-month specialized course in web development, seeking an
@@ -249,6 +250,37 @@
             }, { threshold: 0.4 });
           
             sliders.forEach(slider => observer.observe(slider));
+
+            const sections = document.querySelectorAll(".personalInfo");
+
+const observer2 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+});
+
+sections.forEach(section => {
+  observer2.observe(section);
+});
+
+document.onreadystatechange = function (){
+
+    if( document.readyState !== "complete"){
+
+        document.querySelector("body").style.visibility = "hidden";
+        document.querySelector("#loader").style.visibility = "visible";
+    }else{
+
+        document.querySelector("#loader").style.visibility = "hidden"
+        document.querySelector("body").style.visibility ="visible"
+    }
+}
+
+
+
+
           </script>
           
           
