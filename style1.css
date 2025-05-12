@@ -475,10 +475,17 @@ font-style: normal;
   margin-bottom: 1rem;
   padding: 0.5rem;
 }
+
+.contInput textarea{
+
+  
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
 .contInput button{
 
   background-color: var(--primary-color);
-  padding: 0.2rem;
+  padding: 0.5rem;
   border: none;
   color: var(--off-white);
 }
@@ -704,7 +711,7 @@ body.no-scroll {
       display: grid;
   
   grid-template-columns: 40px 70px  auto 70px 40px ;
-  grid-template-rows: [row1-start] 50px [row1-end] 500px [third-line]  300px 700px 800px 20px 600px 100px 50px [last-line];
+  grid-template-rows: [row1-start] 50px [row1-end] 500px [third-line]  300px 700px 800px 20px 300px 100px 50px [last-line];
   
     }
     .whiteBg{
@@ -1032,6 +1039,11 @@ padding: 5%;
 
   padding: 0.5rem;
   margin-bottom: 0.6rem;
+ }
+ .contInput textarea{
+
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
  }
  .contInput button{
  background-color: var(--primary-color);

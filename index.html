@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home|AlefiyahMadar</title>
     <link href="style1.css" rel="stylesheet" />
-    <script src="./knowledge.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
      <div id="loader" class="center"></div>
@@ -147,15 +147,16 @@
                 <p>Whether you have a question, want to collaborate, or are interested in hiring me, feel free to reach out.</p>
                 <a href="mailto:alefiyahmadarwala@gmail.com">alefiyahmadarwala@gmail.com</a>
             </div>
-            <div class="contInput">
-                <input placeholder="first name"/>
-                <input placeholder="last name"/>
-                <input placeholder="email"/>
-                <input placeholder="phone"/>
-                <input placeholder="message"/>
-                <button>Send</button>
+            <!-- <div class="contInput">
+                <input type="text" required placeholder="first name"/>
+                <input type="text" required placeholder="last name"/>
+                <input type="email" required placeholder="email"/>
+                <input type="tel" required placeholder="phone"/>
+                <textarea type="text"  placeholder="message"></textarea>
+
+                <button type="submit">Send</button>
     
-            </div>
+            </div> -->
         </ul>
         <div class="icons" >
             <a href="https://github.com/alefiyahmadar">
@@ -324,6 +325,24 @@ projectLink.addEventListener("click" , ()=>{
     menuButton.style.visibility = "visible";
 
 })
+
+<script>
+  (function() {
+    emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    
+    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+      .then(function(response) {
+        alert("Message sent successfully!");
+      }, function(error) {
+        alert("Failed to send message: " + error.text);
+      });
+  });
+</script>
+
 
 
 
