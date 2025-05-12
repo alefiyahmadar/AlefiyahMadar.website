@@ -11,6 +11,15 @@
 <body>
      <div id="loader" class="center"></div>
 
+     <div id="menu-overlay">
+    <button id="close-button">✕</button>
+    <nav class="menu-content">
+      <a href="#Portfolio" id="Project">Projects</a>
+      <a href="https://dev.to/alefiyahmadar" id="Blog">Blogs</a>
+      <a href="#contact" id="Contact">Contact</a>
+    </nav>
+  </div>
+
 <nav class="nav">
     
 
@@ -20,7 +29,7 @@
 
         <li class="inline space"><a class="block" href="#Portfolio">Projects </a></li>
 
-        <li class="inline space"><a class="block" href="">Blogs </a></li>
+        <li class="inline space"><a class="block" href="https://dev.to/alefiyahmadar">Blogs </a></li>
 
         <li class="inline space"><a  class="block" href="#contact">Contact </a></li>
 
@@ -31,7 +40,7 @@
 <div class="imghead">
     
 <div class="whiteBg">
-        <img class="side" src="/images/icons8-menu-50.png" width="30" height="30" alt="" />
+        <img class="side" id="menu-button" src="/images/icons8-menu-50.png" width="30" height="30" alt="" />
     <div class="overlay">
     
         <p >I<span>'</span>M ALEFIYAH MADAR.</p>
@@ -277,6 +286,47 @@ document.onreadystatechange = function (){
         document.querySelector("body").style.visibility ="visible"
     }
 }
+
+const menuButton = document.getElementById("menu-button");
+const closeButton = document.getElementById("close-button");
+const menuOverlay = document.getElementById("menu-overlay");
+const contactLink = document.getElementById("Contact");
+const blogLink = document.getElementById("Blog");
+const projectLink = document.getElementById("Project");
+
+menuButton.addEventListener("click", () => {
+  menuOverlay.classList.add("open");
+  document.body.classList.add("no-scroll");
+  menuButton.style.visibility = "hidden";
+});
+
+closeButton.addEventListener("click", () => {
+  menuOverlay.classList.remove("open");
+  document.body.classList.remove("no-scroll");
+  menuButton.style.visibility = "visible";
+});
+
+contactLink.addEventListener("click" , ()=>{
+  menuOverlay.classList.remove("open");
+    document.body.classList.remove("no-scroll");
+    menuButton.style.visibility = "visible";
+
+})
+blogLink.addEventListener("click" , ()=>{
+  menuOverlay.classList.remove("open");
+    document.body.classList.remove("no-scroll");
+    menuButton.style.visibility = "visible";
+
+})
+projectLink.addEventListener("click" , ()=>{
+  menuOverlay.classList.remove("open");
+    document.body.classList.remove("no-scroll");
+    menuButton.style.visibility = "visible";
+
+})
+
+
+
 
 
 

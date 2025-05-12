@@ -18,7 +18,10 @@ html{
 
   scroll-behavior:smooth;
 }
+#menu-overlay{
 
+  display: none;
+}
   .nav{
 
     background-color: var(--dark-color);
@@ -378,7 +381,7 @@ letter-spacing: 0.2cm;
 }
 .contact{
 display: grid;
-  background-color: yellow;
+  
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 7;
@@ -587,11 +590,83 @@ margin-bottom: 1rem;
 scroll-behavior: smooth;
   
   }
+
   
 .icons{
 
   display: none;
 }
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+#menu-button {
+  
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  font-size: 24px;
+  
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#menu-overlay {
+  position: fixed;
+  top: 0;
+  right: -130%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-color);
+  transition: right 0.4s ease-in-out;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+#menu-overlay.open {
+  right: 0;
+}
+
+#close-button {
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+
+}
+
+.menu-content {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+
+}
+
+.menu-content a {
+  display: block;
+  font-size: 24px;
+  margin: 20px 0;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
 
 
   #loader {
@@ -751,7 +826,7 @@ scroll-behavior: smooth;
     }
     .SecPic{
 
-      background-color: yellow;
+      
       display: grid;
       grid-column-start: 1;
       grid-column-end: 6;
@@ -967,7 +1042,7 @@ padding: 5%;
  }
  .phone{
 
-  background-color: yellow;
+  
   display: grid;
   grid-column-start: 1;
   grid-column-end: 6;
